@@ -7,4 +7,9 @@ function updateSize() {
 }
 
 updateSize();
-window.addEventListener("resize", updateSize);
+window.addEventListener("size", updateSize);
+
+function changeColor(newColor){
+  const elem = document.getElementById("color");
+  elem.style.color = newColor;
+}
