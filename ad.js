@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
  updateSize();
 window.addEventListener("size", updateSize);
 
-
 function changeColor(newColor){
   const elem = document.getElementById("color");
   elem.style.color = newColor;
@@ -21,5 +20,11 @@ document.getElementById('len').textContent = textLen
 
 let text = document.getElementById("hello").textContent.substring(0,5)
 document.getElementById('world').textContent = text
+
+const animals = ['dog', 'bird', 'cat', 'fish'];
+let idx = animals.indexOf('cat')
+document.getElementById('animal').textContent = idx
+
+
 
 });
